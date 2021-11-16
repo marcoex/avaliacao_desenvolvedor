@@ -20,12 +20,11 @@ Sua aplicação web DEVE:
 1. Aceitar (via um formulário) o upload de arquivos text, com dados separados por TAB testar o aplicativo usando o arquivo fornecido. A primeira linha do arquivo tem o nome das colunas. Você pode assumir que as colunas estarão sempre nesta ordem, e que sempre haverá uma linha de cabeçalho. Um arquivo de exemplo chamado 'dados.txt' está incluído neste repositório.
 2. Interpretar ("parsear") o arquivo recebido, normalizar os dados, e salvar corretamente a informação em um banco de dados relacional.
 3. Exibir todos os registros importados, bem como a receita bruta total dos registros contidos no arquivo enviado após o upload + parser.
-4. Se sua vaga é para Ruby e Ruby On Rails, ser escrita obrigatoriamente em: Ruby 2.1+ Rails 4 e SQLite 
-5. Se sua vaga é para .Net ser escrita obrigatoriamente em: VB# ou C#, última versão, SQL Server (pode ser express) 
+4. Se sua vaga é para Javascript, ser escrita obrigatoriamente em: NodeJS e MySQL
+5. Se sua vaga é para .Net ser escrita obrigatoriamente em: C# última versão, SQL Server (pode ser express) 
 6. Ser simples de configurar e rodar a partir das instruções fornecidas, 
-7. funcionando em ambiente compatível com Unix (Linux ou Mac OS X) para Ruby On Rails e Windows para .Net. Ela deve utilizar apenas linguagens e bibliotecas livres ou gratuitas.
-8. Ter um teste de model e controller automatizado para a funcionalidade pedida
-9. Ter uma boa aparecia e ser fácil de usar
+7. Ter um teste de model e controller automatizado para a funcionalidade pedida
+8. Ter uma boa aparecia e ser fácil de usar
 
 ## Avaliação
 Seu projeto será avaliado de acordo com os seguintes critérios. 
