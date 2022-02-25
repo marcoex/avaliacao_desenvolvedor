@@ -30,7 +30,7 @@ namespace Valenet.Importador.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			var model = new List<PedidoViewModel>();
+			var model = new ImportacaoViewModel();
 			return View(model);
 		}
 

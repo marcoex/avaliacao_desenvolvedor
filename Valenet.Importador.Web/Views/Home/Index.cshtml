@@ -65,6 +65,8 @@
 					}
 				</tbody>
 			</table>
+			<br />
+			Receita bruta total: @FormatMoney(Model.ReceitaBrutalTotal)
 		</div>
 	</div>
 </div>
@@ -77,7 +79,7 @@
 
 	string GetTableVisibility()
 	{
-		return Model.Pedidos.Count == 0 ? "hidden" : "";
+		return (Model?.Pedidos.Count ?? 0) == 0 ? "hidden" : "";
 	}
 
 	string GetFileId()
@@ -85,4 +87,8 @@
 		return Guid.NewGuid().ToString();
 	}
 
+	static string FormatMoney(double val)
+	{
+		return String.Format("{0:C}", val);
+	}
 }
