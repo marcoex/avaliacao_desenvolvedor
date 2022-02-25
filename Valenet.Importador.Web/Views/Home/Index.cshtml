@@ -1,0 +1,88 @@
+﻿@using System.Reflection
+@using Valenet.Importador.Parser
+@model Valenet.Importador.Web.Models.ImportacaoViewModel
+@{
+	ViewData["Title"] = "Importador";
+}
+</style>
+<div class="text-center">
+	<h1 class="display-5">Importador</h1>
+	<div class="container">
+		<div class="col-12">
+			Selecione arquivo para importação, ou arraste-o para a área delimitada abaixo.
+		</div>
+		<br />
+		<div class="col-12">
+			<form class="md-form" method="post" enctype="multipart/form-data">
+				<div class="input-group">
+					<div class="custom-file">
+						<input type="hidden" name="fileId" value="@GetFileId()">
+						<input type="file" class="custom-file-input" name="file">
+						<label class="custom-file-label" for="inputGroupFile02">Escolher arquivo</label>
+					</div>
+					<div class="input-group-append">
+						<button class="input-group-text" name="enviar">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<br />
+		<br />
+		<div class="col-12" @GetTableVisibility()>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Resultado</th>
+						<th scope="col">@GetTitle(nameof(PedidoViewModel.Comprador))</th>
+						<th scope="col">@GetTitle(nameof(PedidoViewModel.Descricao))</th>
+						<th scope="col">@GetTitle(nameof(PedidoViewModel.Endereco))</th>
+						<th scope="col">@GetTitle(nameof(PedidoViewModel.Fornecedor))</th>
+						<th scope="col">@GetTitle(nameof(PedidoViewModel.PrecoUnitario))</th>
+						<th scope="col">@GetTitle(nameof(PedidoViewModel.Quantidade))</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model.Pedidos) {
+						@if (item.Success) {
+							<tr>
+								<td scope="row" class="text-left">@(++item.Index)</td>
+								<td scope="row">sucesso</td>
+								<td scope="row">@item.Comprador</td>
+								<td scope="row">@item.Descricao</td>
+								<td scope="row">@item.Endereco</td>
+								<td scope="row">@item.Fornecedor</td>
+								<td scope="row" class="text-right">@item.PrecoUnitario</td>
+								<td scope="row" class="text-right">@item.Quantidade</td>
+							</tr>
+						} else {
+							<tr>
+								<td scope="row" class="text-left">@(++item.Index)</td>
+								<td scope="row">falha</td>
+								<td scope="row" colspan="6" class="text-left error">@item.Message</td>
+							</tr>
+						}
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+@functions {
+	static string GetTitle(string propName)
+	{
+		return typeof(PedidoViewModel).GetField(propName).GetCustomAttribute<TitleAttribute>()?.Value ?? propName;
+	}
+
+	string GetTableVisibility()
+	{
+		return Model.Pedidos.Count == 0 ? "hidden" : "";
+	}
+
+	string GetFileId()
+	{
+		return Guid.NewGuid().ToString();
+	}
+
+}

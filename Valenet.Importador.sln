@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valenet.Importador.Web", "Valenet.Importador.Web\Valenet.Importador.Web.csproj", "{3577BB1E-F9AB-4160-B103-D75D505DE253}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valenet.Importador.Parser", "Valenet.Importador.Parser\Valenet.Importador.Parser.csproj", "{00EF8B11-B750-4FB7-A8D2-4EAFF3391624}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valenet.Importador.Data", "Valenet.Importador.Data\Valenet.Importador.Data.csproj", "{B2F0BA0A-E645-4252-AE07-F92E8C1AC063}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outros", "Outros", "{1E93BE2D-90A1-4529-B14E-881710AED07E}"
+	ProjectSection(SolutionItems) = preProject
+		dados.txt = dados.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valenet.Importador.Entities", "Valenet.Importador.Entities\Valenet.Importador.Entities.csproj", "{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valenet.Importador.Tests", "Valenet.Importador.Tests\Valenet.Importador.Tests.csproj", "{8B7573B8-81CB-44D3-B97B-6BB43BA79013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3577BB1E-F9AB-4160-B103-D75D505DE253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3577BB1E-F9AB-4160-B103-D75D505DE253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3577BB1E-F9AB-4160-B103-D75D505DE253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3577BB1E-F9AB-4160-B103-D75D505DE253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00EF8B11-B750-4FB7-A8D2-4EAFF3391624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00EF8B11-B750-4FB7-A8D2-4EAFF3391624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00EF8B11-B750-4FB7-A8D2-4EAFF3391624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00EF8B11-B750-4FB7-A8D2-4EAFF3391624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F0BA0A-E645-4252-AE07-F92E8C1AC063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F0BA0A-E645-4252-AE07-F92E8C1AC063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F0BA0A-E645-4252-AE07-F92E8C1AC063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F0BA0A-E645-4252-AE07-F92E8C1AC063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7573B8-81CB-44D3-B97B-6BB43BA79013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7573B8-81CB-44D3-B97B-6BB43BA79013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7573B8-81CB-44D3-B97B-6BB43BA79013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7573B8-81CB-44D3-B97B-6BB43BA79013}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EFBCE2E-4486-4996-BCA9-A7F55BB4CA6F}
+	EndGlobalSection
+EndGlobal

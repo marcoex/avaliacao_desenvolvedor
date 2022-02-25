@@ -1,0 +1,10 @@
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\bin\Debug\netcoreapp3.1\Valenet.Importador.Parser.deps.json
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\bin\Debug\netcoreapp3.1\Valenet.Importador.Parser.dll
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\bin\Debug\netcoreapp3.1\Valenet.Importador.Parser.pdb
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.csproj.AssemblyReference.cache
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.AssemblyInfoInputs.cache
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.AssemblyInfo.cs
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.csproj.CoreCompileInputs.cache
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.dll
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Parser\obj\Debug\netcoreapp3.1\Valenet.Importador.Parser.pdb

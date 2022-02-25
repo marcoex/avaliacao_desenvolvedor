@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Valenet.Importador.Data\Valenet.Importador.Data.csproj" />
+    <ProjectReference Include="..\Valenet.Importador.Entities\Valenet.Importador.Entities.csproj" />
+    <ProjectReference Include="..\Valenet.Importador.Parser\Valenet.Importador.Parser.csproj" />
+  </ItemGroup>
+
+</Project>

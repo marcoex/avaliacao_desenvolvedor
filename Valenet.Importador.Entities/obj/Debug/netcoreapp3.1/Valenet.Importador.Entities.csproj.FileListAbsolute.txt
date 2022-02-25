@@ -1,0 +1,13 @@
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\bin\Debug\netcoreapp3.1\Valenet.Importador.Entities.deps.json
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\bin\Debug\netcoreapp3.1\Valenet.Importador.Entities.dll
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\bin\Debug\netcoreapp3.1\Valenet.Importador.Entities.pdb
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\bin\Debug\netcoreapp3.1\Valenet.Importador.Parser.dll
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\bin\Debug\netcoreapp3.1\Valenet.Importador.Parser.pdb
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.csproj.AssemblyReference.cache
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.AssemblyInfoInputs.cache
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.AssemblyInfo.cs
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.csproj.CoreCompileInputs.cache
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.csproj.CopyComplete
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.dll
+D:\Users\netch\Documents\GitHub\avaliacao_desenvolvedor\Valenet.Importador.Entities\obj\Debug\netcoreapp3.1\Valenet.Importador.Entities.pdb
