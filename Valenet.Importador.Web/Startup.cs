@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -14,9 +15,15 @@ namespace Valenet.Importador
 {
 	public class Startup
 	{
-		public Startup(IConfiguration configuration)
+		public Startup(IConfiguration configuration, IWebHostEnvironment env)
 		{
-			Configuration = configuration;
+			var builder = new ConfigurationBuilder()
+				.SetBasePath(env.ContentRootPath)
+				.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+				.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+			builder.AddEnvironmentVariables();
+			Configuration = builder.Build();
 		}
 
 		public IConfiguration Configuration { get; }
@@ -25,12 +32,11 @@ namespace Valenet.Importador
 		public void ConfigureServices(IServiceCollection services)
 		{
 			var config = new MapperConfiguration(cfg => {
-				cfg.CreateMap<Data.Model.Pedido, Entities.Pedido>();
-				cfg.CreateMap<Entities.Pedido, Data.Model.Pedido>();
+				cfg.CreateMap<Data.Model.Pedido, Entities.Pedido>().ReverseMap();
 			});
 
 			services.AddControllersWithViews();
-			services.AddDbContext<Data.ValenetContext>();
+			services.AddDbContext<Data.ValenetContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")));
 			services.AddSingleton<IMapper>(x => config.CreateMapper());
 		}
 

@@ -11,13 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valenet.Importador.Data", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outros", "Outros", "{1E93BE2D-90A1-4529-B14E-881710AED07E}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		dados.txt = dados.txt
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valenet.Importador.Entities", "Valenet.Importador.Entities\Valenet.Importador.Entities.csproj", "{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valenet.Importador.Entities", "Valenet.Importador.Entities\Valenet.Importador.Entities.csproj", "{C2A0B5C8-6F24-4D2B-AC6D-6380D77E1A25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valenet.Importador.Tests", "Valenet.Importador.Tests\Valenet.Importador.Tests.csproj", "{8B7573B8-81CB-44D3-B97B-6BB43BA79013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valenet.Importador.Tests", "Valenet.Importador.Tests\Valenet.Importador.Tests.csproj", "{8B7573B8-81CB-44D3-B97B-6BB43BA79013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

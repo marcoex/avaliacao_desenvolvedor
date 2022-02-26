@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -35,12 +36,10 @@ namespace Valenet.Importador.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Index(string fileId)
+		public async Task<IActionResult> Index(IFormFile file)
 		{
-			//todo:fazer controle de fileId por sessão (para não mandar o mesmo arquivo mais de uma vez ao mesmo tempo)
-
 			var pp = new Parser.ParserProcessor<Entities.Pedido>();
-			pp.File = DownloadTempFile();
+			pp.File = await DownloadTempFile(file);
 			pp.Parse();
 
 			var success = pp.ObjectList.Select(x => new PedidoViewModel() {
@@ -77,11 +76,11 @@ namespace Valenet.Importador.Controllers
 		/// Salvar arquivo enviado via formulário em um arquivo temporário do windows.
 		/// </summary>
 		/// <returns></returns>
-		private FileInfo DownloadTempFile()
+		private async Task<FileInfo> DownloadTempFile(IFormFile file)
 		{
 			var path = Path.GetTempFileName();
-			using var file = new FileStream(path, FileMode.Truncate);
-			Request.Form.Files[0].CopyTo(file);
+			using var tempFile = new FileStream(path, FileMode.Truncate);
+			file.CopyTo(tempFile);
 			return new FileInfo(path);
 		}
 
